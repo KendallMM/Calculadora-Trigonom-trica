@@ -61,6 +61,8 @@ public class CalculadoraTrigonometrica {
                 resultado = Math.tanh(anguloEnGrados);
                 System.out.println("tanh("+ anguloEnGrados + ") = "+ resultado + "rad");
 
+            }else{
+                System.out.println("Error");
 
             }
-}
+    }
