@@ -24,6 +24,7 @@ public class CalculadoraTrigonometrica {
         double anguloEnGrados = numero.nextDouble();
         double resultado = 0;
         System.out.println("El ángulo que usted escribió corresponde a:   " + anguloEnGrados + "º");
+
             if (calcular.equals("sin")) {
                 resultado = Math.sin(anguloEnGrados);
                 System.out.println("sin("+ anguloEnGrados + ") = "+ resultado +"rad");
@@ -36,5 +37,17 @@ public class CalculadoraTrigonometrica {
                 resultado = Math.tan(anguloEnGrados);
                 System.out.println("tan(" + anguloEnGrados + ") = " + resultado + "rad");
 
-    }
+            }else if (calcular.equals("arcsin") && (-1 <= anguloEnGrados) && (1 >= anguloEnGrados)){
+                resultado = Math.asin(anguloEnGrados);
+                System.out.println("arcsin(" + anguloEnGrados + ") = " + resultado + "rad");
+
+            }else if (calcular.equals("arccos") && (-1 <= anguloEnGrados) && (1 >= anguloEnGrados)) {
+                resultado = Math.acos(anguloEnGrados);
+                System.out.println("arccos(" + anguloEnGrados + ") = " + resultado + "rad");
+
+            }else if (calcular.equals("arctan")) {
+                resultado = Math.atan(anguloEnGrados);
+                System.out.println("arctan(" + anguloEnGrados + ") = " + resultado + "rad");
+
+            }
 }
