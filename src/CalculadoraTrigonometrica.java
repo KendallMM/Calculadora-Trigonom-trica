@@ -49,5 +49,18 @@ public class CalculadoraTrigonometrica {
                 resultado = Math.atan(anguloEnGrados);
                 System.out.println("arctan(" + anguloEnGrados + ") = " + resultado + "rad");
 
+            }else if (calcular.equals("sinh")){
+                resultado = Math.sinh(anguloEnGrados);
+                System.out.println("sinh("+ anguloEnGrados + ") = "+ resultado + "rad");
+
+            }else if (calcular.equals("cosh")){
+                resultado = Math.cosh(anguloEnGrados);
+                System.out.println("cosh("+ anguloEnGrados + ") = "+ resultado + "rad");
+
+            }else if (calcular.equals("tanh")){
+                resultado = Math.tanh(anguloEnGrados);
+                System.out.println("tanh("+ anguloEnGrados + ") = "+ resultado + "rad");
+
+
             }
 }
