@@ -24,6 +24,17 @@ public class CalculadoraTrigonometrica {
         double anguloEnGrados = numero.nextDouble();
         double resultado = 0;
         System.out.println("El ángulo que usted escribió corresponde a:   " + anguloEnGrados + "º");
+            if (calcular.equals("sin")) {
+                resultado = Math.sin(anguloEnGrados);
+                System.out.println("sin("+ anguloEnGrados + ") = "+ resultado +"rad");
+
+            }else if (calcular.equals("cos")) {
+                resultado = Math.cos(anguloEnGrados);
+                System.out.println("cos(" + anguloEnGrados + ") = " + resultado + "rad");
+
+            }else if (calcular.equals("tan") ){
+                resultado = Math.tan(anguloEnGrados);
+                System.out.println("tan(" + anguloEnGrados + ") = " + resultado + "rad");
 
     }
 }
